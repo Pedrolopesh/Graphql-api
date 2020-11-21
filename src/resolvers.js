@@ -1,4 +1,4 @@
-const Job = require('./Job')
+const Job = require('./database/Model/Job')
 
 module.exports = { 
     Query:{

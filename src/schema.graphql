@@ -13,5 +13,5 @@ type Query {
 }
 
 type Mutation {
-    createJobPost(name: String!, email: String!,  company: String!, place: String!, description: String!): Job
+    createJobPost(name: String!, email: String!,  company: String!, place: String!, description: String!): Job,
 }
