@@ -14,4 +14,14 @@ type Query {
 
 type Mutation {
     createJobPost(name: String!, email: String!,  company: String!, place: String!, description: String!): Job,
+    deleteJobPost(id: ID!): Job,
+
+    updateJobPost(
+        id: ID!,
+        name: String,
+        email: String,
+        company: String,
+        place: String,
+        description: String
+    ): Job
 }

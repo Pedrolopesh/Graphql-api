@@ -1,6 +1,6 @@
 const { GraphQLServer } = require('graphql-yoga');
 const path = require('path');
-const resolvers = require('./resolvers');
+const resolvers = require('./graphql/resolvers');
 const connectDB = require('./database/index')
 
 connectDB()
@@ -12,7 +12,7 @@ connectDB()
 // )
 
 const server = new GraphQLServer({
-    typeDefs: path.resolve(__dirname, 'schema.graphql'),
+    typeDefs: path.resolve(__dirname, 'graphql/schema.graphql'),
     resolvers: resolvers
 });
 
